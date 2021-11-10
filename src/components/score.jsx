@@ -34,27 +34,27 @@ class Score extends Component {
     
     this.osmd.autoResizeEnabled = true;
     // this.osmd.cursor.Iterator.currentTimeStamp.setRealValue=0.75;
-//     window.audioPlayer.on("iteration", notes => {
-//         console.log(notes);
+    window.audioPlayer.on("iteration", notes => {
+        console.log(notes);
         
-//         console.log(this.osmd.cursor.cursorElementId);
-//         console.log(this.osmd.cursor.Iterator.CurrentVoiceEntries[0].Notes[0].halfTone);
-//         console.log(this.osmd.cursor.Iterator.CurrentVoiceEntries[0].Notes[0]);
-//         console.log(this.osmd.cursor.Iterator.CurrentVoiceEntries[0].Notes[0].Pitch);
+        console.log(this.osmd.cursor.cursorElementId);
+        console.log(this.osmd.cursor.Iterator.CurrentVoiceEntries[0].Notes[0].halfTone);
+        console.log(this.osmd.cursor.Iterator.CurrentVoiceEntries[0].Notes[0]);
+        console.log(this.osmd.cursor.Iterator.CurrentVoiceEntries[0].Notes[0].Pitch);
         
-//         console.log(this.osmd.cursor.currentPageNumber);
+        console.log(this.osmd.cursor.currentPageNumber);
         
-//         console.log(this.osmd.cursor.Iterator.currentTimeStamp.realValue);
+        console.log(this.osmd.cursor.Iterator.currentTimeStamp.realValue);
 
         
-//         // console.log(this.osmd.graphicalnote.PositionAndShape);
-//         // osmd.graphic.getClickedObject()
-//         // graphicalnote.PositionAndShape.AbsolutePosition.x및 PositionAndShape.Size.
+        // console.log(this.osmd.graphicalnote.PositionAndShape);
+        // osmd.graphic.getClickedObject()
+        // graphicalnote.PositionAndShape.AbsolutePosition.x및 PositionAndShape.Size.
 
-// // let boundingbox = this.osmd.graphic.measureList[0][1].PositionAndShape;
-// // this.osmd.drawer.drawBoundingBox(boundingbox, "#34cfeb66")
-//         // r.Iterator.CurrentVoiceEntries[0]
-//       });
+// let boundingbox = this.osmd.graphic.measureList[0][1].PositionAndShape;
+// this.osmd.drawer.drawBoundingBox(boundingbox, "#34cfeb66")
+        // r.Iterator.CurrentVoiceEntries[0]
+      });
 
       // for(var i = 0; i<10;i++){
       //   await this.osmd.cursor.next();
