@@ -30,6 +30,9 @@ class Score extends Component {
     await this.osmd.render();
     await window.audioPlayer.loadScore(this.osmd);
     
+    this.osmd.FollowCursor = true;
+    
+    this.osmd.autoResizeEnabled = true;
     // this.osmd.cursor.Iterator.currentTimeStamp.setRealValue=0.75;
     window.audioPlayer.on("iteration", notes => {
         console.log(notes);
@@ -61,9 +64,7 @@ class Score extends Component {
     await this.osmd.cursor.show();  
     // this.osmd.cursor.reset() .Iterator.currentTimeStamp=0.75;
     
-    this.osmd.FollowCursor = true;
     
-    this.osmd.autoResizeEnabled = true;
     
     // this.osmd.setOptions
     // this.osmd.cursor.updateStyle('#41e9f2');
@@ -88,15 +89,15 @@ class Score extends Component {
   render() {
       
     return (<>
-  <div className="m-menu">
+    
       <div className="controls">
         <button onClick={this.play}>Play</button>
         <button onClick={this.pause}>Pause</button>
         <button onClick={this.stop}>Stop</button>
       </div>
-      </div>
-      <div className="m-contents">
-      <div ref={this.divRef} /></div>
+    
+    
+      <div ref={this.divRef} />
     </>
     );
   }
